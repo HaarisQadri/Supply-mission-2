@@ -61,3 +61,8 @@ function draw() {
   drawSprites();
  
 }
+function keyPressed(){
+	if (keyCode === DOWN_ARROW){
+		Matter.body.setStatic(packageBody, false )
+	}
+}
